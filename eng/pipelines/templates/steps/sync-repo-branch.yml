@@ -3,14 +3,14 @@ parameters:
   # Example:
   #   Azure/azure-rest-api-specs:
   #     Branch: master
-  #     TargetRepos: 
+  #     TargetRepos:
   #       Azure/azure-rest-api-specs-pr:
   #       azure-sdk/azure-rest-api-specs:
   #         Branch: dev
   #         Rebase: true
   #   Azure/azure-sdk-for-go:
   #     Branch: master
-  #     TargetRepos: 
+  #     TargetRepos:
   #       Azure/azure-sdk-for-go-pr:
   - name: Repos
     type: object
@@ -19,6 +19,7 @@ parameters:
     type: string
 
 steps:
+  asdf
 
 - ${{ each repo in parameters.Repos }}:
   - pwsh: |
