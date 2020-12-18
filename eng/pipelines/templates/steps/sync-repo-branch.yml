@@ -19,8 +19,7 @@ parameters:
     type: string
 
 steps:
-  asdf
-
+- stagefork: foo
 - ${{ each repo in parameters.Repos }}:
   - pwsh: |
       Set-PsDebug -Trace 1
