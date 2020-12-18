@@ -1,12 +1,5 @@
 # Mirror the master branch for each repo folder to all subscribed langauge repos.
 #
-resources:
-  repositories:
-    - repository: TestGithub
-      type: github
-      endpoint: GithubBenbp
-      name: benbp/azure-sdk-tools
-      ref: benbp/test
 
 trigger: none
 pr: none
